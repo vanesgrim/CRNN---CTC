@@ -1,0 +1,336 @@
+{
+  "device": "cpu",
+  "image": "data/raw/imgs/val/00014_AN-07_6_YR.jpg",
+  "single_plate_bytes": 12612,
+  "expected_plate": "076YR",
+  "base_infer_mean_ms": 14.46,
+  "warmup": 10,
+  "hierarchy_by_size": {
+    "12KB": {
+      "label": "12KB",
+      "plates_in_batch": 1,
+      "bytes": 12612,
+      "levels": {
+        "ram": {
+          "runs": 20,
+          "bytes": 12612,
+          "size_mb": 0.012,
+          "io_mean_ms": 0.01,
+          "io_p50_ms": 0.01,
+          "io_p95_ms": 0.01,
+          "bandwidth_mbs": 1107.97,
+          "total_mean_ms": 14.41,
+          "total_p95_ms": 15.99,
+          "integrity_pct": 100.0
+        },
+        "disk": {
+          "runs": 20,
+          "bytes": 12612,
+          "size_mb": 0.012,
+          "io_mean_ms": 0.07,
+          "io_p50_ms": 0.07,
+          "io_p95_ms": 0.09,
+          "bandwidth_mbs": 164.37,
+          "total_mean_ms": 15.79,
+          "total_p95_ms": 17.13,
+          "integrity_pct": 100.0
+        },
+        "shm_local": {
+          "runs": 20,
+          "bytes": 12612,
+          "size_mb": 0.012,
+          "io_mean_ms": 0.11,
+          "io_p50_ms": 0.11,
+          "io_p95_ms": 0.15,
+          "bandwidth_mbs": 105.16,
+          "total_mean_ms": 15.25,
+          "total_p95_ms": 19.67,
+          "integrity_pct": 100.0,
+          "segments": 1
+        },
+        "cloud_kax": {
+          "runs": 5,
+          "bytes": 12612,
+          "size_mb": 0.012,
+          "io_mean_ms": 21.85,
+          "io_p50_ms": 20.88,
+          "io_p95_ms": 24.38,
+          "bandwidth_mbs": 0.55,
+          "total_mean_ms": 48.07,
+          "total_p95_ms": 65.6,
+          "integrity_pct": 100.0,
+          "upload_ms": 2120.62,
+          "segments": 1
+        }
+      }
+    },
+    "1MB": {
+      "label": "1MB",
+      "plates_in_batch": 84,
+      "bytes": 1059408,
+      "levels": {
+        "ram": {
+          "runs": 20,
+          "bytes": 1059408,
+          "size_mb": 1.01,
+          "io_mean_ms": 0.13,
+          "io_p50_ms": 0.12,
+          "io_p95_ms": 0.18,
+          "bandwidth_mbs": 7985.73,
+          "total_mean_ms": 16.74,
+          "total_p95_ms": 21.32,
+          "integrity_pct": 100.0
+        },
+        "disk": {
+          "runs": 20,
+          "bytes": 1059408,
+          "size_mb": 1.01,
+          "io_mean_ms": 0.27,
+          "io_p50_ms": 0.27,
+          "io_p95_ms": 0.3,
+          "bandwidth_mbs": 3717.73,
+          "total_mean_ms": 14.49,
+          "total_p95_ms": 16.22,
+          "integrity_pct": 100.0
+        },
+        "shm_local": {
+          "runs": 20,
+          "bytes": 1059408,
+          "size_mb": 1.01,
+          "io_mean_ms": 0.36,
+          "io_p50_ms": 0.35,
+          "io_p95_ms": 0.41,
+          "bandwidth_mbs": 2791.88,
+          "total_mean_ms": 14.64,
+          "total_p95_ms": 17.75,
+          "integrity_pct": 100.0,
+          "segments": 1
+        },
+        "cloud_kax": {
+          "runs": 5,
+          "bytes": 1059408,
+          "size_mb": 1.01,
+          "io_mean_ms": 157.16,
+          "io_p50_ms": 149.22,
+          "io_p95_ms": 178.04,
+          "bandwidth_mbs": 6.43,
+          "total_mean_ms": 157.18,
+          "total_p95_ms": 178.05,
+          "integrity_pct": 0.0,
+          "upload_ms": 2238.39,
+          "segments": 1
+        }
+      }
+    },
+    "5MB": {
+      "label": "5MB",
+      "plates_in_batch": 416,
+      "bytes": 5246592,
+      "levels": {
+        "ram": {
+          "runs": 20,
+          "bytes": 5246592,
+          "size_mb": 5.004,
+          "io_mean_ms": 0.83,
+          "io_p50_ms": 0.66,
+          "io_p95_ms": 1.12,
+          "bandwidth_mbs": 6037.29,
+          "total_mean_ms": 18.04,
+          "total_p95_ms": 32.87,
+          "integrity_pct": 100.0
+        },
+        "disk": {
+          "runs": 20,
+          "bytes": 5246592,
+          "size_mb": 5.004,
+          "io_mean_ms": 1.09,
+          "io_p50_ms": 1.1,
+          "io_p95_ms": 1.16,
+          "bandwidth_mbs": 4573.81,
+          "total_mean_ms": 16.3,
+          "total_p95_ms": 17.62,
+          "integrity_pct": 100.0
+        },
+        "shm_local": {
+          "runs": 20,
+          "bytes": 5246592,
+          "size_mb": 5.004,
+          "io_mean_ms": 1.29,
+          "io_p50_ms": 1.24,
+          "io_p95_ms": 1.43,
+          "bandwidth_mbs": 3886.89,
+          "total_mean_ms": 17.26,
+          "total_p95_ms": 22.21,
+          "integrity_pct": 100.0,
+          "segments": 1
+        },
+        "cloud_kax": {
+          "error": "RuntimeError: Sin hashes en uploadToCloudFromDisk: {'message': 'No se pudo reservar espacio en la nube para el recurso.'}"
+        }
+      }
+    },
+    "10MB": {
+      "label": "10MB",
+      "plates_in_batch": 832,
+      "bytes": 10493184,
+      "levels": {
+        "ram": {
+          "runs": 20,
+          "bytes": 10493184,
+          "size_mb": 10.007,
+          "io_mean_ms": 1.44,
+          "io_p50_ms": 1.3,
+          "io_p95_ms": 1.64,
+          "bandwidth_mbs": 6969.93,
+          "total_mean_ms": 18.91,
+          "total_p95_ms": 27.99,
+          "integrity_pct": 100.0
+        },
+        "disk": {
+          "runs": 20,
+          "bytes": 10493184,
+          "size_mb": 10.007,
+          "io_mean_ms": 2.3,
+          "io_p50_ms": 2.11,
+          "io_p95_ms": 3.31,
+          "bandwidth_mbs": 4356.66,
+          "total_mean_ms": 16.32,
+          "total_p95_ms": 18.68,
+          "integrity_pct": 100.0
+        },
+        "shm_local": {
+          "runs": 20,
+          "bytes": 10493184,
+          "size_mb": 10.007,
+          "io_mean_ms": 2.54,
+          "io_p50_ms": 2.37,
+          "io_p95_ms": 3.96,
+          "bandwidth_mbs": 3940.21,
+          "total_mean_ms": 17.32,
+          "total_p95_ms": 23.66,
+          "integrity_pct": 100.0,
+          "segments": 1
+        },
+        "cloud_kax": {
+          "error": "RuntimeError: Sin hashes en uploadToCloudFromDisk: {'message': 'No se pudo reservar espacio en la nube para el recurso.'}"
+        }
+      }
+    }
+  },
+  "buffering_by_size": {
+    "B=2": {
+      "equilibrado": {
+        "items": 100,
+        "buffer_size": 2,
+        "elapsed_s": 1.502,
+        "effective_fps": 66.6,
+        "max_occupancy": 2,
+        "producer_waits_full": 7,
+        "consumer_waits_empty": 60,
+        "consumer_idle_ms": 71.2,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "rafaga_intermitente": {
+        "items": 100,
+        "buffer_size": 2,
+        "elapsed_s": 2.212,
+        "effective_fps": 45.2,
+        "max_occupancy": 2,
+        "producer_waits_full": 90,
+        "consumer_waits_empty": 4,
+        "consumer_idle_ms": 568.4,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "productor_lento": {
+        "items": 100,
+        "buffer_size": 2,
+        "elapsed_s": 3.652,
+        "effective_fps": 27.4,
+        "max_occupancy": 2,
+        "producer_waits_full": 0,
+        "consumer_waits_empty": 97,
+        "consumer_idle_ms": 1710.3,
+        "processed": 100,
+        "integrity_pct": 100.0
+      }
+    },
+    "B=8": {
+      "equilibrado": {
+        "items": 100,
+        "buffer_size": 8,
+        "elapsed_s": 1.472,
+        "effective_fps": 67.9,
+        "max_occupancy": 2,
+        "producer_waits_full": 0,
+        "consumer_waits_empty": 21,
+        "consumer_idle_ms": 25.1,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "rafaga_intermitente": {
+        "items": 100,
+        "buffer_size": 8,
+        "elapsed_s": 1.765,
+        "effective_fps": 56.7,
+        "max_occupancy": 8,
+        "producer_waits_full": 60,
+        "consumer_waits_empty": 4,
+        "consumer_idle_ms": 228.2,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "productor_lento": {
+        "items": 100,
+        "buffer_size": 8,
+        "elapsed_s": 3.646,
+        "effective_fps": 27.4,
+        "max_occupancy": 1,
+        "producer_waits_full": 0,
+        "consumer_waits_empty": 100,
+        "consumer_idle_ms": 1723.4,
+        "processed": 100,
+        "integrity_pct": 100.0
+      }
+    },
+    "B=32": {
+      "equilibrado": {
+        "items": 100,
+        "buffer_size": 32,
+        "elapsed_s": 1.818,
+        "effective_fps": 55.0,
+        "max_occupancy": 22,
+        "producer_waits_full": 0,
+        "consumer_waits_empty": 1,
+        "consumer_idle_ms": 14.5,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "rafaga_intermitente": {
+        "items": 100,
+        "buffer_size": 32,
+        "elapsed_s": 1.364,
+        "effective_fps": 73.3,
+        "max_occupancy": 32,
+        "producer_waits_full": 19,
+        "consumer_waits_empty": 0,
+        "consumer_idle_ms": 0.0,
+        "processed": 100,
+        "integrity_pct": 100.0
+      },
+      "productor_lento": {
+        "items": 100,
+        "buffer_size": 32,
+        "elapsed_s": 3.647,
+        "effective_fps": 27.4,
+        "max_occupancy": 1,
+        "producer_waits_full": 0,
+        "consumer_waits_empty": 99,
+        "consumer_idle_ms": 1835.5,
+        "processed": 100,
+        "integrity_pct": 100.0
+      }
+    }
+  }
+}
